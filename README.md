@@ -1,2 +1,6 @@
 # js-basics
-Hello from vscode
+git command
+clone
+add
+commit
+push
