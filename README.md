@@ -4,3 +4,5 @@ clone
 add
 commit
 push
+hello
+hello
