@@ -49,3 +49,41 @@ Use const if you want block-scoped variables that are constant and cannot be rea
 const pieValue = "3.14";
 // pieValue = "Math";(pieValue can't be reassigned because it contains constants values only.)
 console.log(pieValue); //3.14 <-output.
+
+//24jan 2024
+/*const isFemale = confirm("Are you female?"); // boolean value for confirm.
+console.log(isFemale);
+
+const address = prompt("Please enter your address"); //question asked in prompt.
+console.log(address);
+
+alert("You are now connected"); //message in alert.
+let x; //undefined
+*/
+// const address = prompt("Please enter your address:(m/n)");
+
+// if (address === "m") {
+//   alert("You are from kathmandu");
+// } else {
+//   alert("You are from different city");
+// }
+
+// switch (address) {
+//   case "m":
+//     alert("You are from kalanki");
+//     break;
+//   case "n":
+//     alert("You are from different");
+//     break;
+//   default:
+//     alert("Invalid address");
+//     break;
+// }
+//write a program that welcome user based on their name and password input.
+const uName = prompt("Enter your name: ");
+const password = prompt("Enter your password: ");
+if (uName === password) {
+  alert(`valid ${uName}`);
+} else {
+  alert("invalid username or password");
+}
