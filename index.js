@@ -1,11 +1,11 @@
 //print the message
 console.log("hello worlds");
 //variables (var,let, const)
-//var(ES5))
+//var(ES5))older version
 var nameStudent = "smriti"; // camelcase for joining two or more words for variables.
 nameStudent = "shruti"; // we can rewrite the var keyword.
 console.log(nameStudent);
-//const,let(ES6)
+//const,let(ES6) new version
 let student = "shyam";
 student = "hari";
 console.log(student);
@@ -37,10 +37,12 @@ console.log(sitaParent, sitaParent); //rita rita <-output.
  let can be used if you want block-scoped variables that can be reassigned. 
 */
 let hariParent = "saraswati";
+let ramParent = "saraswati";
 hariParent = "krishna";
 // let hariParent = "Saraswati"; can't redeclare in the same scope.
 console.log(hariParent + hariParent); //krishnakrishna <-output.
-
+//console.log(hariParent (-,*,%,/) hariParent);->NaN(Not a Number), but for & -> 0.
+console.log(ramParent);
 /*const keyword.
 Use const if you want block-scoped variables that are constant and cannot be reassigned.
 */
