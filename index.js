@@ -128,7 +128,7 @@ uTime >= 5 && uTime <= 12
 
 //loop
 //write a multiplication table for 2,3,5.
-const a = Number(prompt("Enter a number: "));
+/*const a = Number(prompt("Enter a number: "));
 a === 2
   ? alert(`This is multiplication table of 2`)
   : alert(`This isn't multiplication table of 2`);
@@ -159,4 +159,18 @@ do {
   let f = e * k;
   console.log(` ${e}*${k}=${f}`);
   k++;
-} while (k <= 10);
+} while (k <= 10);*/
+
+//Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
+/*const f = Number(prompt("Enter a Number:"));
+f % 3 == 0
+  ? alert(`Multiply of ${f}`)
+  : f % 7 == 0
+  ? alert(`Multiply of ${f}`)
+  : alert("Invalid number");*/
+
+//Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
+const d = Number(prompt("Enter a Number:"));
+const e = Number(prompt("Enter a Number:"));
+let sum = d + e;
+d === e ? alert(`${sum * 3}`) : alert("Invalid number");
