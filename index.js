@@ -1,5 +1,5 @@
 //print the message
-console.log("hello worlds");
+//console.log("hello worlds");
 //variables (var,let, const)
 //var(ES5))older version
 /*var nameStudent = "smriti"; // camelcase for joining two or more words for variables.
@@ -85,16 +85,66 @@ let x; //undefined
 // }
 
 //write a program that welcome user based on their name and password input. ${uName} is to show the uName in display below.
-const uName = prompt("Enter your name: ");
+/*const uName = prompt("Enter your name: ");
 const password = prompt("Enter your password: ");
-if (uName === password) {
-  alert(`valid ${uName}`); //
-} else {
-  alert("invalid username or password");
-}
+//ternary operators(ES6) (if-else and switch is ES5) (for ternary operator=conditon? true: false)
+uName === password
+  ? alert(`valid ${uName}`)
+  : alert("invalid username or password");*/
+// if (uName === password) {
+//   alert(`valid ${uName}`); //
+// } else {
+//   alert("invalid username or password");
+// }
+
 //write a program that asks user for addition of 2 numbers and alert the result.(assignment-2, "24january")
-const program1 = prompt("Enter a number: ");
+/*const program1 = prompt("Enter a number: ");
 const program2 = prompt("Enter another number: ");
 sum = parseInt(program1) + parseInt(program2);
 //console.log(sum); when we put this after giving the value of program1 and program2, output value will be  disappeared. and if we alert the result then that will be shown.
-alert(`The sum of ${program1} and ${program2} is ${sum}`);
+alert(`The sum of ${program1} and ${program2} is ${sum}`);*/
+
+//25jan(type conversion/type casting)
+/*const userMobileNum = Number(prompt("Enter user mobile number: "));
+//console.log(userMobileNum);(go to inspect and console for js...)
+alert(`your mobile number is ${userMobileNum}`);*/
+
+/*const date = Number(prompt("Enter date: "));
+date === 1
+  ? alert(`your date is ${date}`)
+  : date === 2
+  ? alert(`your date is ${date}`)
+  : alert(`${date + 2}`);*/
+
+/*const usName = prompt("Enter user name: ");
+const uTime = Number(prompt("Enter time: "));
+uTime >= 5 && uTime <= 12
+  ? alert(`your time is morning ${usName}`)
+  : uTime >= 1 && uTime <= 3
+  ? alert(`your time is afternoon ${usName}`)
+  : uTime >= 4 && uTime < 5
+  ? alert(`your time is evening ${usName}`)
+  : alert(`your time is night ${usName}`);*/
+
+//loop
+//write a multiplication table for 2,3,5.
+const a = Number(prompt("Enter a number: "));
+a === 2
+  ? alert(`This is multiplication table of 2`)
+  : alert(`This isn't multiplication table of 2`);
+for (let i = 1; i <= 10; i++) {
+  c = a * i;
+  console.log(`${a} x ${i}=${c}`);
+}
+
+// console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+// const b = Number(prompt("Enter a number: "));
+// b === 3
+//   ? alert(`This is multiplication table of ${b}`)
+//   : alert(`This isn't multiplication table of ${b}`);
+// j = 1;
+// while (b == 3) {
+//   d = b * j;
+//   console.log(`${b} x ${j}=${b}`);
+// }
+// j++;
