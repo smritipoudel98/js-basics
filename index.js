@@ -133,7 +133,7 @@ a === 2
   ? alert(`This is multiplication table of 2`)
   : alert(`This isn't multiplication table of 2`);
 for (let i = 1; i <= 10; i++) {
-  c = a * i;
+  let c = a * i;
   console.log(`${a} x ${i}=${c}`);
 }
 
@@ -142,9 +142,9 @@ const b = Number(prompt("Enter a number: "));
 b === 3
   ? alert(`This is multiplication table of ${b}`)
   : alert(`This isn't multiplication table of ${b}`);
-j = 1;
+let j = 1;
 while (j <= 10) {
-  d = b * j;
+  let d = b * j;
   console.log(`${b} x ${j}=${d}`);
   j++;
 }
@@ -154,9 +154,9 @@ const e = Number(prompt("Enter a number: "));
 e === 5
   ? alert(`This is multiplication table of ${e}`)
   : alert(`This isn't multiplication table of ${e}`);
-k = 1;
+let k = 1;
 do {
-  f = e * k;
+  let f = e * k;
   console.log(` ${e}*${k}=${f}`);
   k++;
 } while (k <= 10);
