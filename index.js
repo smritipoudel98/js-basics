@@ -137,14 +137,26 @@ for (let i = 1; i <= 10; i++) {
   console.log(`${a} x ${i}=${c}`);
 }
 
-// console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-// const b = Number(prompt("Enter a number: "));
-// b === 3
-//   ? alert(`This is multiplication table of ${b}`)
-//   : alert(`This isn't multiplication table of ${b}`);
-// j = 1;
-// while (b == 3) {
-//   d = b * j;
-//   console.log(`${b} x ${j}=${b}`);
-// }
-// j++;
+console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+const b = Number(prompt("Enter a number: "));
+b === 3
+  ? alert(`This is multiplication table of ${b}`)
+  : alert(`This isn't multiplication table of ${b}`);
+j = 1;
+while (j <= 10) {
+  d = b * j;
+  console.log(`${b} x ${j}=${d}`);
+  j++;
+}
+console.log("!!!!!!!!!!!!!!!!!");
+
+const e = Number(prompt("Enter a number: "));
+e === 5
+  ? alert(`This is multiplication table of ${e}`)
+  : alert(`This isn't multiplication table of ${e}`);
+k = 1;
+do {
+  f = e * k;
+  console.log(` ${e}*${k}=${f}`);
+  k++;
+} while (k <= 10);
