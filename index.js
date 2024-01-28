@@ -170,7 +170,55 @@ f % 3 == 0
   : alert("Invalid number");*/
 
 //Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
-const d = Number(prompt("Enter a Number:"));
+/*const d = Number(prompt("Enter a Number:"));
 const e = Number(prompt("Enter a Number:"));
 let sum = d + e;
-d === e ? alert(`${sum * 3}`) : alert("Invalid number");
+d === e ? alert(`${sum * 3}`) : alert("Invalid number");*/
+
+//write a function to  do multiplication table of 2.
+//es5
+// function multi(a, b) {
+//   return a * b;
+// }
+// const res1 = multi(2, 1);
+// const res2 = multi(2, 2);
+// const res3 = multi(2, 3);
+// const res4 = multi(2, 4);
+// const res5 = multi(2, 5);
+// const res6 = multi(2, 6);
+// const res7 = multi(2, 7);
+// const res8 = multi(2, 8);
+// const res9 = multi(2, 9);
+// const res10 = multi(2, 10);
+// console.log(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10);
+
+//es6
+const multi = (a, b) => {
+  return a * b;
+};
+const res1 = multi(2, 1);
+const res2 = multi(2, 2);
+const res3 = multi(2, 3);
+const res4 = multi(2, 4);
+const res5 = multi(2, 5);
+const res6 = multi(2, 6);
+const res7 = multi(2, 7);
+const res8 = multi(2, 8);
+const res9 = multi(2, 9);
+const res10 = multi(2, 10);
+console.log(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10);
+
+// write a function to find area of rectangle
+//es5
+function findArea(l, b) {
+  return l * b;
+}
+const res = findArea(2, 1);
+console.log(res);
+
+//es6
+const finddRe = (l, b) => {
+  return l * b;
+};
+const r = finddRe(2, 1);
+console.log(r);
