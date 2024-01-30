@@ -193,7 +193,7 @@ d === e ? alert(`${sum * 3}`) : alert("Invalid number");*/
 // console.log(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10);
 
 //es6
-const multi = (a, b) => {
+/*const multi = (a, b) => {
   return a * b;
 };
 const res1 = multi(2, 1);
@@ -206,19 +206,156 @@ const res7 = multi(2, 7);
 const res8 = multi(2, 8);
 const res9 = multi(2, 9);
 const res10 = multi(2, 10);
-console.log(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10);
+console.log(res1, res2, res3, res4, res5, res6, res7, res8, res9, res10);*/
 
 // write a function to find area of rectangle
 //es5
-function findArea(l, b) {
+/*function findArea(l, b) {
   return l * b;
 }
 const res = findArea(2, 1);
-console.log(res);
+console.log(res);*/
 
 //es6
-const finddRe = (l, b) => {
+/*const finddRe = (l, b) => {
   return l * b;
 };
 const r = finddRe(2, 1);
-console.log(r);
+console.log(r);*/
+
+//..
+// const mm = (a) => {
+//   let i = 1;
+//   do {
+//     console.log(mm * i);
+//     i++;
+//   } while (i <= 10);
+
+// to reverse a number.
+/*const rev = (a) => {
+  const b = String(a);
+  newN = "";
+  for (i = a.length - 1; i >= 0; i--) {
+    const c = a.charAt(i);
+    newN += c;
+  }
+  return newN;
+};
+const rr = "1233343";
+const d = rev(rr);
+console.log(d);*/
+
+//commaformatter(10,000)
+/*const a = (n) => {
+  const str = String(n);
+  let newStr = "";
+  counter = 0;
+  for (i = str.length - 1; i >= 0; i--) {
+    const c = str.charAt(i);
+    newStr = c + newStr;
+    counter++;
+    if (counter % 3 == 0 && i != 0) {
+      newStr = "," + newStr;
+    }
+  }
+  return newStr;
+};
+//newstr="000,01"
+
+const r = "10000";
+const rrd = a(r);
+console.log(rrd);*/
+
+//write a js function that convert regular text to proper case
+/*const toProperCase = (a) => {
+  let result = ""; // stored converted text
+  let capitalNext = true;
+
+  for (i = 0; i < a.length; i++) {
+    const c = a.charAt(i); // convert to proper case
+    if (capitalNext) {
+      result += c.toUpperCase(); // convert all text to uppercase
+      capitalNext = false;
+    } else {
+      result += c.toLowerCase();
+    }
+    if (c === "  ") {
+      capitalNext = true;
+    }
+  }
+  return result;
+};
+const tex = "hello, world!";
+const pp = toProperCase(tex);
+console.log(pp);*/
+
+//write a js function that replaces C++ to mern(I am smriti . I C++. to output I am smriti. I live in C++.)
+/*function text(b) {
+  const c = String(b);
+  result1 = "";
+  for (i = 0; i < c.length; i++) {
+    const d = c.substring(i, i + 3);
+    if (d === "c++") {
+      result1 += "mern";
+      i += 2;
+    } else {
+      result1 += c.charAt(i);
+    }
+  }
+  return result1;
+}
+const ttp = "Hi there, I study c++. ";
+const rr = text(ttp);
+console.log(rr);*/
+
+// write js function that validates if the user input string is email or not
+/*function validate(em) {
+  const da = String(em);
+  valid = false;
+  for (i = 0; i < da.length; i++) {
+    const email = da.charAt(i);
+    if (email === "@") {
+      valid = true;
+      break;
+    }
+  }
+  if (valid) {
+    console.log(`${da} is a valid.`);
+  } else {
+    console.log(`${da} is not a valid`);
+  }
+
+  return valid;
+}
+const ee = "smriti@gmail.com";
+const rrr = validate(ee);
+console.log(rrr);*/
+
+// write js function that counts number of vowel used in the string
+//write a js function that check if password is valid or not
+//validation rules are:
+//atleast 1 lowercase character, 1 uppercase, 1 number, 1symbol and password length>=8
+const tocheckPassword = (p) => {
+  valid = false;
+  if (p.length < 8 && p !== "String") {
+    return false;
+  }
+  for (let i = 0; i < p.length; i++) {
+    const p2 = p.charAt(i);
+    if (
+      /[0-9]/.test(p2) &&
+      /[A-Z]/.test(p2) &&
+      /[a-z]/.test(p2) &&
+      /[!@#$%^&*()+_-?:,'"\.]/.test(p2) // /[!@#$%^&*()+_-?:,'"]/.test(p2)
+    ) {
+      valid = true;
+      break;
+    } else {
+      console.log("Invalid password");
+    }
+  }
+  return valid;
+};
+const p3 = "1Ab!";
+const password = tocheckPassword(p3);
+console.log(`password: ${password}`);
