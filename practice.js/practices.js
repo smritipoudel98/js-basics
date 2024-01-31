@@ -32,30 +32,61 @@ const a3 = "Hello";
 const dd = a3.charCodeAt(1);
 console.log(dd); //value of e is 101(unicode).output=101
 console.log("?????????????");
-const toCheckPassword = (p) => {
-  let valid = true;
 
-  if (p.length < 8) {
-    return false; // Password should have a length of at least 8
-  }
-
-  for (let i = 0; i < p.length; i++) {
-    const char = p.charAt(i);
-
-    if (
-      !/[0-9]/.test(char) &&
-      !/[A-Z]/.test(char) &&
-      !/[a-z]/.test(char) &&
-      !/[-!/@/#/$%^&*()+_?:,'"\.]/.test(char)
-    ) {
-      valid = false;
-      break; // Exit the loop if any character doesn't meet the criteria
+// function to check palindrome
+const toPalindrome = (a) => {
+  const b = String(a);
+  const result = "";
+  for (let i = b.length - 1; i >= 0; i--) {
+    const c = b.charAt(i);
+    if (c === b) {
+      result = result + c;
+      console.log("Palidrome");
+      break;
     }
   }
-
-  return valid;
+  return result;
 };
+const pp = 1001;
+const result = toPalindrome(pp);
+console.log(result);
 
-const p3 = "1Ab!ofdjjdA";
-const password = toCheckPassword(p3);
-console.log(`Is the password valid? ${password}`);
+//chaining
+const cleanAndChain = (o) => {
+  const r = String(o);
+  return r.replaceAll("-", "").toUpperCase();
+};
+const st = "hello-- i m";
+const rrr = cleanAndChain(st);
+console.log(rrr);
+
+//object(function lai call garda method, data lai call garda property
+const person = {
+  namee: "John",
+  birthyear: 2040,
+  age: function () {
+    return 2080 - this.birthyear;
+  },
+  calAge: () => {
+    return 2080 - person.birthyear;
+  },
+};
+//read
+console.log(person);
+//update
+person.name = "Smriti";
+console.log({ person });
+console.log(person.age());
+console.log(person.calAge());
+//create your own object for car,laptop,tv using CRUD operation.
+const car = {
+  cardes: {
+    model: "lamborgini",
+    color: "red",
+    speed: "fast",
+  },
+};
+car.cardes.model = "THar";
+console.log(car.cardes); //update
+delete car.cardes.speed; //delete speed
+console.log(car.cardes);

@@ -335,27 +335,30 @@ console.log(rrr);*/
 //write a js function that check if password is valid or not
 //validation rules are:
 //atleast 1 lowercase character, 1 uppercase, 1 number, 1symbol and password length>=8
-const tocheckPassword = (p) => {
-  valid = false;
-  if (p.length < 8 && p !== "String") {
-    return false;
+const toCheckPassword = (p) => {
+  let valid = true;
+
+  if (p.length < 8) {
+    return false; // Password should have a length of at least 8
   }
+
   for (let i = 0; i < p.length; i++) {
-    const p2 = p.charAt(i);
+    const char = p.charAt(i);
+
     if (
-      /[0-9]/.test(p2) &&
-      /[A-Z]/.test(p2) &&
-      /[a-z]/.test(p2) &&
-      /[!@#$%^&*()+_-?:,'"\.]/.test(p2) // /[!@#$%^&*()+_-?:,'"]/.test(p2)
+      !/[0-9]/.test(char) &&
+      !/[A-Z]/.test(char) &&
+      !/[a-z]/.test(char) &&
+      !/[-!/@/#/$%^&*()+_?:,'"\.]/.test(char)
     ) {
-      valid = true;
-      break;
-    } else {
-      console.log("Invalid password");
+      valid = false;
+      break; // Exit the loop if any character doesn't meet the criteria
     }
   }
+
   return valid;
 };
-const p3 = "1Ab!";
-const password = tocheckPassword(p3);
-console.log(`password: ${password}`);
+
+const p3 = "1Ab!ofdjjdA";
+const password = toCheckPassword(p3);
+console.log(`Is the password valid? ${password}`);
