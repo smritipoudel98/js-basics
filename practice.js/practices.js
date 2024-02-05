@@ -228,7 +228,7 @@ console.log({ res });*/
 //result page3=>[5,6]
 //result page10=>[]
 
-function paginate(data, page, limit) {
+/*function paginate(data, page, limit) {
   const startIndex = (page - 1) * limit;
   const endIndex = startIndex + limit;
   const paginatedData = data.slice(startIndex, endIndex);
@@ -246,12 +246,12 @@ console.log("Result page1 =>", page1);
 console.log("Result page2 =>", page2);
 console.log("Result page3 =>", page3);
 console.log("Result page4 =>", page4);
-console.log("Result page10 =>", page10);
+console.log("Result page10 =>", page10);*/
+
 //write a js function that finds the bird name starting with e character
-// const birds = ["parror", "Eagle", "emus", "Caracars", "egrets"];
+// const birds = ["parrot", "Eagle", "emus", "Caracars", "egrets"];
 //result:["eagle", "emus", "egrets];
 
-//  const birds = ["parrot", "Eagle", "emus", "Caracars", "egrets"];
-//  const index = 0;
-//  const startA = (b) => b.startindex(e)=birds;startA(b);
-// console.log(startA(birds));
+const birds = ["parrot", "Eagle", "emus", "Caracars", "egrets"];
+const startA = birds.filter((birds) => birds.toLowerCase().startsWith("e"));
+console.log(startA);
