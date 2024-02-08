@@ -14,11 +14,11 @@
 
 // console.log(a);
 
-//filter()
+// filter()
 // const a = ["ram", "shyam", 12, 34, 6];
 // const b = a.filter((value) => value > 6);
 // console.log(b);
-//reduce()
+// reduce()
 const a = [10, 34, 6, "hari"];
 const b = a.reduce((value1, value2) => value1 + value2);
 console.log(b);
