@@ -23,6 +23,10 @@
 // const b = a.reduce((value1, value2) => value1 + value2);
 // console.log(b);
 //Slice();
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-const ss = arr.slice(2, 7); //output 3,4,5,6,7(2to6 inclusive and 8 which is in 7Th position is exclusive)
-console.log(ss);
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+// const ss = arr.slice(2, 7); //output 3,4,5,6,7(2to6 inclusive and 8 which is in 7Th position is exclusive)
+// console.log(ss);
+Splice();
+const spl = ["teddy", "bear", "ram", "shyam", "hari"];
+const dd = spl.splice(1, 3, "hello", "bye");
+console.log(spl);
