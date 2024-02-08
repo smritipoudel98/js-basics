@@ -1,0 +1,21 @@
+{
+  "name": "js-basics-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "currency-converter-lt": "^2.0.1",
+    "lodash": "^4.17.21",
+    "lodash.divide": "^4.9.0",
+    "propercase": "^1.0.2",
+    "qrcode": "^1.5.3",
+    "readmore-showless": "^2.0.8",
+    "slug": "^8.2.3"
+  }
+}

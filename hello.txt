@@ -1,0 +1,3 @@
+const { number } = require("./index.js");
+const resu = number("10000");
+console.log({ resu }); 

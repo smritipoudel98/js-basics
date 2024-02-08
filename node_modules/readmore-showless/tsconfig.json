@@ -1,0 +1,18 @@
+{
+  "$schema": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "jsonSchema": false,
+  "include": ["src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
