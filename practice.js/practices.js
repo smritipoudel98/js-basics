@@ -252,6 +252,70 @@ console.log("Result page10 =>", page10);*/
 // const birds = ["parrot", "Eagle", "emus", "Caracars", "egrets"];
 //result:["eagle", "emus", "egrets];
 
-const birds = ["parrot", "Eagle", "emus", "Caracars", "egrets"];
-const startA = birds.filter((birds) => birds.toLowerCase().startsWith("e"));
-console.log(startA);
+// const birds = ["parrot", "Eagle", "emus", "Caracars", "egrets"];
+// const startA = birds.filter((birds) => birds.toLowerCase().startsWith("e"));
+// console.log(startA);
+//or
+// const birds = ["parrot", "Eagle", "emus", "Caracars", "egrets"];
+// const ebirds = (bird) => bird.filter((bird) => !bird.search(/[eE]/g));
+// console.log(ebirds(birds));
+
+//5thfeb
+const characters = [
+  {
+    name: "Luke Skywalker",
+    height: "172",
+    mass: "77",
+    eye_color: "blue",
+    gender: "male",
+  },
+  {
+    name: "Darth Vader",
+    height: "202",
+    mass: "136",
+    eye_color: "yellow",
+    gender: "male",
+  },
+  {
+    name: "Leia Organa",
+    height: "150",
+    mass: "49",
+    eye_color: "brown",
+    gender: "female",
+  },
+  {
+    name: "Anakin Skywalker",
+    height: "188",
+    mass: "84",
+    eye_color: "blue",
+    gender: "male",
+  },
+];
+//map
+//get all array of names
+const functionsname = characters.map((characters) => characters.name);
+console.log(functionsname);
+//get an array of all heights
+const ff = characters.map((characters) => characters.height);
+console.log(ff);
+//get an array of object with just name and height properties
+const namef = characters.map((characters) => characters.name);
+const heightf = characters.map((characters) => characters.height);
+console.log({ namef, heightf });
+//get an array of first names.
+const nn = characters.map((characters) => characters.name.split(" ")[0]);
+console.log(nn);
+//reduce
+//get the total mass of all characters
+// const am = (characters) => {
+//   return characters.reduce((a, b) => a + Number(b.mass), 0);
+// };
+// console.log(am(characters));
+//get total heigth of all characters
+const he = (characters) => {
+  return characters.reduce((d, r) => d + Number(r.height), 0);
+};
+
+console.log(he(characters));
+
+//get the total number of characters in all character names
