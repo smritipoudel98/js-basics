@@ -119,10 +119,22 @@
 //     // Handle error
 //   });
 
-const { mailer } = require("./practice");
-const sendMail = async (email, sub) => {
-  return mailer(email, sub);
+// const { mailer } = require("./practice");
+// const sendMail = async (email, sub) => {
+//   return mailer(email, sub);
+// };
+// sendMail("ishupoudel27@gmail.com", "hi ishu").then((res) => {
+//   console.log(res);
+// });
+
+const { hash, checkPassword } = require("./practice");
+const encrP = (password) => {
+  return hash(password);
 };
-sendMail("ishupoudel27@gmail.com", "hi ishu").then((res) => {
-  console.log(res);
-});
+const checkP = (pass, hPass) => {
+  return checkPassword(pass, hPass);
+};
+const e = encrP("rrr");
+console.log({ e });
+const f = checkP("rrr", e);
+console.log({ f });
